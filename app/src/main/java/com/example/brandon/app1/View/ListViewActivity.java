@@ -32,8 +32,7 @@ public class ListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
 
-
-        final Context c = this;
+        Toast.makeText(this, "Click movie to delete", Toast.LENGTH_LONG).show();
 
         oListView= (ListView) findViewById(R.id.moviesListView);
         oMovieAdapter = new MovieAdapter(this);
